@@ -37,6 +37,10 @@
 		color: #171a1b;
 	}
 
+	.section {
+		/* outline: 2px solid purple; */
+	}
+
 	.two-columns {
 		text-align: center;
 		font-size: 0;
@@ -47,6 +51,29 @@
 		display: inline-block;
 		vertical-align: top;
 		text-align: center;
+	}
+	
+	.three-columns {
+		text-align: center;
+		font-size: 0;
+		padding: 15px 0 25px;
+		background: #eee;
+	}
+	.three-columns .column {
+		/* outline: 2px solid red; */
+		width: 100%;
+		max-width: 200px;
+		display: inline-block;
+		vertical-align: top;
+		text-align: center;
+	}
+	.three-columns .padding {
+		padding: 15px;
+	}
+	.three-columns .content {
+		font-size: 15px;
+		line-height: 20px;
+		padding: 0 5px;
 	}
 </style>
 </head>
@@ -61,7 +88,7 @@
 		</tr>
 
 		<!-- LOGO SECTION -->
-		<tr>
+		<tr class="section">
 			<td style="padding: 14px 0 4px;">
 				<table width="100%">
 					<tr>
@@ -98,7 +125,7 @@
 			</td>
 		</tr>
 		<!-- BANNER IMAGE -->
-		<tr>
+		<tr class="section">
 			<td>
 				<a href="#"><img src="img/banner.jpg" 
 					alt=""
@@ -108,7 +135,100 @@
 		</tr>
 
 		<!-- THREE COLUMN SECTION -->
+		<tr class="section">
+			<td>
+				<table width="100%">
+					<tr>
+						<td class="three-columns">
 
+							<table class="column">
+								<tr>
+									<td class="padding">
+
+										<table class="content">
+											<tr>
+												<td>
+													<a href="#"><img src="img/home.png" 
+														alt="House icon" width="130px"
+														style="max-width: 130px;"></a>
+												</td>
+											</tr>
+											<tr>
+												<td>
+													<p style="font-weight: bold;
+														font-size: 17px;">Web Design
+													</p>
+													<p>Responsive HTML Websites.
+														Accessible, Immersive & Engaging.
+													</p>
+												</td>
+											</tr>
+										</table>
+
+									</td>
+								</tr>
+							</table>
+
+							<table class="column">
+								<tr>
+									<td class="padding">
+
+										<table class="content">
+											<tr>
+												<td>
+													<a href="#"><img src="img/email.png" 
+														alt="Email icon" width="130px"
+														style="max-width: 130px;"></a>
+												</td>
+											</tr>
+											<tr>
+												<td>
+													<p style="font-weight: bold;
+														font-size: 17px;">HTML Email
+													</p>
+													<p>Responsive HTML Email Template.
+														Course to master email development.
+													</p>
+												</td>
+											</tr>
+										</table>
+
+									</td>
+								</tr>
+							</table>
+
+							<table class="column">
+								<tr>
+									<td class="padding">
+
+										<table class="content">
+											<tr>
+												<td>
+													<a href="#"><img src="img/settings.png" 
+														alt="settings icon" width="130px"
+														style="max-width: 130px;"></a>
+												</td>
+											</tr>
+											<tr>
+												<td>
+													<p style="font-weight: bold;
+														font-size: 17px;">E-commerce
+													</p>
+													<p>Responsive CMS development.
+													</p>
+												</td>
+											</tr>
+										</table>
+										
+									</td>
+								</tr>
+							</table>
+
+						</td>
+					</tr>
+				</table>
+			</td>
+		</tr>
 
 		<!-- TWO COLUMN SECTION -->
 
