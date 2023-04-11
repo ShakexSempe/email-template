@@ -41,6 +41,11 @@
 	.two-columns {
 		text-align: center;
 		font-size: 0;
+		padding: 20px 0;
+	}
+
+	.two-columns.last {
+		padding: 15px 0;
 	}
 	.two-columns .column {
 		width: 100%;
@@ -74,13 +79,13 @@
 		padding: 0 5px;
 	}
 
-	.two-columns.last {
-		padding: 15px 0;
-	}
+	
 	.two-columns .padding {
-		padding: 20px;
+		/* outline: 2px solid red; */
+		padding: 20px 0;
 	}
 	.two-columns .content {
+		/* outline: 2px solid red; */
 		font-size: 15px;
 		line-height: 20px;
 		text-align: left;
@@ -107,11 +112,15 @@
 		padding: 0 62px 10px;
 	}
 
-	@media (min-width: 650px) {
+	@media (min-width: 600px) {
 		.logo {
 			/* border: 2px solid blue; */
 			padding: 0 40px;
 		}
+		.two-columns .padding {
+		/* outline: 2px solid red; */
+		padding: 20px;
+	}
 	}
 </style>
 </head>
@@ -277,7 +286,7 @@
 				<table width="100%">
 
 					<tr>
-						<td class="two-columns last">
+						<td class="two-columns">
 
 							<table class="column">
 								<tr>
@@ -305,7 +314,7 @@
 											<tr>
 												<td>
 													<p style="font-weight: bold; 
-													font-size: 18px;">Responsive & Accessible <br> Web Design</p>
+													font-size: 17px; margin: 0;">Responsive & Accessible <br> Web Design</p>
 													<p style="padding-bottom: 16px;">Websites and Email templates that are user friendly and look good on all devices.</p>
 													<a href="https://shakexsempe.netlify.app/" target="_blank" class="button">Get Started</a>
 												</td>
